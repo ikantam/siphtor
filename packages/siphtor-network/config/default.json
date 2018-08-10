@@ -1,0 +1,14 @@
+{ 
+  "restServer": {
+    "webSocketURL": "ws://localhost:3000",
+    "httpURL": "http://localhost:3000/api"
+  },
+  "def": {
+    "fields": [
+      {
+        "login": "asc"
+      }
+    ],
+    "partial_filter_selector": {}
+  }
+}

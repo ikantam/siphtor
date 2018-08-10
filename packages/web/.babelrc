@@ -1,0 +1,17 @@
+{
+  "env": {
+    "development": {
+      "plugins": [ "react-hot-loader/babel" ],
+      "sourceMaps": "inline",
+      "retainLines": "true"
+    }
+  },
+  "presets": [
+    [ "env", { "targets": { "node": "8" } } ],
+    "stage-3",
+    "react"
+  ],
+  "plugins": [
+    ["transform-class-properties", { "spec": true }]
+  ]
+}

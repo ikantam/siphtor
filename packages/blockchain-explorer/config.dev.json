@@ -1,0 +1,37 @@
+{
+  "network-config": {
+    "org1": {
+      "name": "peerOrg1",
+      "mspid": "Org1MSP",
+      "peer1": {
+        "requests": "grpc://127.0.0.1:7051",
+        "events": "grpc://127.0.0.1:7053",
+        "server-hostname": "peer0.org1.example.com",
+        "tls_cacerts": "{{PACKAGES_DIR}}/fabric-network/development/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+      },
+      "admin": {
+        "key": "{{PACKAGES_DIR}}/fabric-network/development/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
+        "cert": "{{PACKAGES_DIR}}/fabric-network/development/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+      }
+    }
+  },
+  "host": "localhost",
+  "port": "8080",
+  "channel": "devchannel",
+  "keyValueStore": "/tmp/fabric-client-kvs",
+  "eventWaitTime": "30000",
+  "users":[
+    {
+       "username":"admin",
+       "secret":"adminpw"
+    }
+   ],
+  "pg": {
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "fabricexplorer",
+    "username": "hppoc",
+    "passwd": "password"
+  },
+  "license": "Apache-2.0"
+}

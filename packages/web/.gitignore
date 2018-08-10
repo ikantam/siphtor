@@ -1,0 +1,11 @@
+kv.store
+node_modules
+.DS_Store
+.vscode
+.idea
+npm-debug.log
+.jshintignore
+.jshintrc
+bin
+
+yarn-error.log

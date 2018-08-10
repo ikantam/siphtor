@@ -1,0 +1,47 @@
+namespace com.siphtor.network
+
+asset Wallet identified by walletId {
+  o String walletId
+  o Double usd default = 0.0
+  o Double sph default = 0.0
+  --> User owner
+}
+
+participant User identified by userId {
+  o String userId
+  o String cryptedPassword
+  o String tfaSecret
+  o Boolean tfaStatus default = false
+
+  o String firstName optional
+  o String lastName optional
+  o String email optional
+
+  o DateTime timestamp
+}
+
+transaction Transfer {
+  --> User sender
+  --> User receiver
+  o String symbol
+  o Double amount
+}
+
+transaction Buy {
+  --> User user
+  o String symbol
+  o Double amount
+}
+
+event BuyEvent {
+  --> User user optional
+  o String symbol
+  o Double amount
+}
+
+event TransferEvent {
+  --> User sender optional
+  --> User receiver optional
+  o String symbol
+  o Double amount
+}

@@ -1,0 +1,1024 @@
+@font-face {
+  font-family: 'Sukhumvit-Set';
+  src: url('../fonts/sukhumvit-set/SukhumvitSet-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DejavuSans';
+  src: url('../fonts/dejavu/DejaVuSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DejavuSansBold';
+  src: url('../fonts/dejavu/DejaVuSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DejavuSansCondensedBold';
+  src: url('../fonts/dejavu/DejaVuSansCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DinAlternateBold';
+  src: url('../fonts/din-alternate-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DinCondensedBold';
+  src: url('../fonts/dincondensed.ttf') format('truetype');
+}
+
+#nav-body {
+  padding: 0 8%;
+  height: 65px;
+  background: #1B2632;
+  color: white;
+  z-index: -1;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#nav-left {
+  float: left;
+  letter-spacing: 0.0825em;
+  font-size: 35px;
+  margin: 10px 0px;
+}
+
+#nav-right {
+  float: right;
+}
+
+#avatar-fullname {
+  font-family: 'Sukhumvit-Set';
+  display: inline-block;
+}
+
+#avatar {
+  margin: 13px 10px;
+  display: inline-block;
+}
+
+#nav-body .nav-icon img {
+  width: 20px;
+  position: relative;
+  top: -18px;
+  margin: 3px;
+}
+
+.icon-bar .nav-icon {
+  text-align: -webkit-center;
+}
+
+.icon-bar .nav-icon:hover {
+  filter: hue-rotate(95deg);
+  text-align: -webkit-center;
+}
+
+.icon-bar .nav-icon.active {
+  filter: hue-rotate(95deg);
+}
+
+#nav-icons {
+  display: inline-block;
+}
+
+#avatar-circle {
+  display: inline-block;
+  background: top center url('../images/header/avatar.png');
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 11px;
+}
+
+#avatar-fullname {
+  position: relative;
+  display: inline-block;
+  bottom: 14px;
+}
+
+#left-page {
+  padding: 12px 15px;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.qrcode-siphtor-logo {
+  display: inline-block;
+}
+
+.siphtor-wallet-logo img {
+  top: 20px;
+  right: 35px;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  position: absolute;
+}
+
+.qrbar {
+  display: inline-block;
+  padding-left: 25px;
+  text-align: center;
+}
+
+.qrbar img {
+  margin-bottom: 2px;
+}
+
+hr.green-line {
+  display: block;
+  border: 0;
+  border-top: 2px solid #A5C84C;
+  margin: 1em 0;
+  padding: 0;
+}
+
+hr.green-thin-line {
+  display: block;
+  border: 0;
+  border-top: 1px solid #A5C84C;
+  margin: 0.8em 0;
+  padding: 0;
+}
+
+.wallets-security {
+  font-family: 'DinAlternateBold';
+  margin-top: 135px;
+}
+
+.userinfo {
+  padding-left: 25px;
+  margin-bottom: 7px;
+}
+
+.userinfo .user-fullname {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: 'Sukhumvit-Set'
+}
+
+.userinfo .user-login {
+  font-weight: bold;
+  font-size: 9px;
+  font-family: 'Sukhumvit-Set';
+}
+
+.userinfo .user-member-since {
+  font-weight: bold;
+  font-size: 9px;
+  font-family: 'Sukhumvit-Set';
+}
+
+.table-wrapper {
+  font-family: 'Sukhumvit-Set';
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #D36C35;
+  display: grid;
+  width: auto;
+  overflow: hidden;
+}
+
+.bottom-line {
+  padding: 7px 10px 0px 10px;
+  font-size: 11px;
+  color: #B9BCBD;
+}
+
+.bottom-line a {
+  font-family: 'Sukhumvit-Set';
+  margin: 5px;
+  cursor: pointer;
+  color: #A0A3A4;
+}
+.bottom-line b {
+  font-size: 12px;
+  color: black;
+}
+
+.account-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Sukhumvit-Set';
+  padding: 10px 60px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #A0A3A4;
+  height: 63px;
+}
+
+.sph-wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 33px;
+}
+
+.not-mobile .money-wallet {
+  margin-right: 60px;
+  font-size: 12px;
+}
+
+.money-wallet-grey {
+  color: #A0A3A4;
+  font-size: 11px;
+  text-align: -webkit-right;
+}
+
+.wallet-name-with-icon img {
+  margin-top: -2px;
+  margin-left: 12px;
+  margin-right: 15px;
+}
+
+#right-page .table-wrapper {
+  /* min-height: 398px; */
+}
+
+#right-page .table-wrapper.transactions-wrapper {
+  min-height: 0px;
+}
+
+
+.right-transactions {
+  position: relative;
+  height: 81px;
+  top: 3px;
+  border: 2px solid #A0A3A4;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: auto;
+  /* text-align: -webkit-center; */
+}
+
+.right-transactions:last-child {
+  margin-bottom: 5px;
+}
+
+.right-transactions-text {
+  position: relative;
+  top: 3px;
+  letter-spacing: 0.09em;
+  font-size: 30px;
+  font-family: 'DinCondensedBold'
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 132px;
+}
+
+.page-navigation .icon-bar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-navigation a img {
+  width: 53%;
+}
+
+.page-navigation .icon-bar > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table.tr-table  {
+  width: 100%;
+}
+
+.tr-table tr td, .tr-table tr th {
+  padding-right: 12px;
+  padding-left: 12px;
+  border-right: 1px solid black;
+}
+
+.tr-table tr td:last-child, .tr-table tr th:last-child {
+  border-right: none;
+}
+
+.tr-table tr td:first-child, .tr-table tr th:first-child {
+  padding-left: 0;
+}
+
+.for-mobile .sph-wallet {
+  font-size: 12px;
+}
+
+.for-mobile .toggler {
+  color: #959595;
+}
+
+.for-mobile .toggler:active {
+  color: #605d58;
+}
+
+.money-wallet{
+  height: 19px;
+}
+
+.money-account {
+  font-family: 'DinCondensedBold';
+  font-size: 19px;
+  letter-spacing: 0.09em;
+}
+
+.circle {
+  text-align: right;
+  height: 0;
+}
+
+.circle i {
+  position: absolute;
+  bottom: 6px;
+  right: 32px;
+  font-size: 9px;
+  color: #A5C84C;
+}
+
+button.btn {
+  font-weight: 600;
+  background: none;
+  border: 1px solid #e96a23;
+  color: #e96a23;
+  font-size: 11px;
+}
+
+button.btn:hover {
+  background: #e96a23;
+  color: white;
+}
+
+button.btn:active {
+  border: 1px solid #e96a23;
+  color: #e96a23;
+}
+
+.logout-icon, .logout-icon:active {
+  color: white;
+  font-size: 24px;
+  position: relative;
+  margin-left: 4px;
+  bottom: 12px;
+}
+
+.nav-icon.logout-icon:hover {
+  color: #DDD;
+}
+
+.table-wrapper.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.gap-between-pages {
+  padding-right: 10px;
+  border-right: 2px solid #A0A3A4;
+}
+
+/*****************************security_password*******************************/
+
+.col .row {
+  margin: 0;
+}
+
+.container .row {
+  min-width: 319px;
+}
+
+.for-mobile {
+  font-family: 'Sukhumvit-Set';
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #A0A3A4;
+  margin-top: 10px;
+}
+
+.for-mobile a {
+  float: right;
+}
+
+.security-information {
+  font-size: 13px;
+  padding-top: 5px;
+  width: calc(100% - 200px);
+  min-width: 178px;
+  text-align: -webkit-right;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.09em;
+}
+
+.security-information .information-right {
+  width: 185px;
+  position: absolute;
+  right: 0;
+  top: -31px;
+}
+
+.security-information div {
+  text-align: -webkit-center;
+  padding: 3px 0;
+}
+
+.security-information .password {
+  color: #e96a23;
+}
+
+.security-information .two-factor {
+  border-top: 2px solid #A5C84C;
+}
+
+.right-content {
+  width: 100%;
+  padding: 10px 30px;
+  /* min-height: 407px; */
+}
+
+.right-align {
+  width: 100%;
+  height: 90%;
+}
+
+.right-align h4 {
+  margin-top: 0;
+  color: #A0A3A4;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.right-align span {
+  font-size: 12.5px;
+  line-height: 1.3;
+  display: block;
+  max-width: 400px;
+}
+
+.right-content input {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.right-content input::placeholder {
+  font-size: 12px;
+  /*color: #ccc;*/
+}
+
+.right-content button {
+  margin-top: 15px;
+  float: right;
+}
+
+/*************************security-two-factor****************************/
+.qr {
+ // margin-top: -12px;
+  padding: 10px;
+}
+
+.right-content .qr-code {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0 44px 0;
+}
+
+.right-content .qr-code .text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.right-content .qr-code .text span {
+  font-size: 18px;
+}
+
+.right-content .qr-code .code {
+  height: 100px;
+  width: 100px;
+}
+
+.right-content .secret-key {
+  padding: 10px 0;
+  border-top: 1px solid #A5C84C;
+  border-bottom: 1px solid #A5C84C;
+  margin: 0 0 40px 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: -webkit-center;
+  min-height: 57px;
+}
+
+.right-content .secret-key span {
+  word-break: break-word;
+  max-width: 500px;
+}
+
+.right-content .qr-input {
+  padding: 0 30px;
+}
+
+.right-content input {
+  /* height: 48px; */
+  /* border-radius: 2px; */
+  /* border: 1px solid #A0A3A4; */
+}
+
+@media (max-width: 500px) {
+  .right-content.qr {
+    padding: 10px 0;
+  }
+  .right-content .qr-input {
+    padding: 0;
+  }
+}
+
+.right-content.pass .right-align > h4 {
+  margin-top: 20px;
+}
+
+.right-content.pass .right-align > span {
+  margin: 25px 0;
+}
+
+/*************************************************buy************************************************/
+.right-transactions.buy {
+  text-align: left;
+}
+
+.right-content.buy .drop_down {
+  font-family: 'Sukhumvit-Set';
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 2px solid #A0A3A4;
+  margin-top: 6px;
+  width: 100%;
+  display: inline-block;
+  min-height: 50px;
+}
+
+.right-content.buy .left_elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 33px;
+}
+
+.right-content.buy .left_elem>a {
+  display: contents;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.right-content.buy .left_elem>a:hover {
+  color: #959595;
+}
+
+.right-content.buy .left_elem>a:active {
+  color: #605d58;
+}
+
+.right-content.buy .icon {
+  height: 20px;
+  width: calc(100% - 60px);
+  display: inline-block;
+}
+
+.right-content.buy .drop_down .many {
+  height: 27px;
+  width: 100px;
+  display: inline-block;
+  font-size: 11px;
+  text-align: -webkit-right;
+  margin-right: 30px;
+}
+
+.right-content.buy .drop_down .money-wallet{
+  margin-right: 40px;
+}
+
+.right-content.buy .drop_down .sph-wallet{
+  font-size: 12px;
+}
+
+.right-content.buy .block>span {
+  font-size: 11px;
+  color: black;
+  font-family: 'Arial';
+}
+
+.right-content.buy .block.bottom, .right-content.buy .btn {
+  margin-top: 30px;
+}
+
+.right-content.buy .block {
+  margin-top: 25px;
+}
+
+/**************************************welcom***********************************/
+
+.page {
+  text-align: -webkit-center;
+}
+
+.page form .help-block {
+  text-align: left;
+}
+
+.page form button {
+  float: right;
+}
+
+.welcome-page {
+  max-width: 600px;
+}
+
+.alert-siphtor {
+  border: 1px solid #e96a23;
+  color: #a94442;
+  padding: 8px;
+  text-align: center;
+}
+
+.alert-siphtor-success {
+  border: 1px solid #d6e9c6;
+  color: #3c763d;
+  padding: 8px;
+  text-align: center;
+}
+
+.welcome-page .big-logo {
+  margin-top: 100px;
+}
+
+.welcome-page .big-logo img {
+  margin-left: 10px;
+}
+
+.welcome-page .welcome-text {
+  color: #A0A3A4;
+}
+
+.welcome-page .welcome-name {
+  margin: 25px 0;
+  font-size: 34px;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.welcome-page .welcome-description {
+  /* max-width: 295px; */
+  margin-bottom: 20px;
+  letter-spacing: 0.06em;
+  font-size: 15px;
+}
+
+.welcome-page .welcome-description > span {
+  font-family: 'DinCondensedBold';
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
+.welcome-page .welcome-description .black {
+  color: black;
+  font-weight: bold;
+}
+
+.welcome-page .welcome-description .orange {
+  color: #e96a23;
+  font-weight: bold;
+}
+
+.welcome-page .btn-welcome {
+  margin: 30px 0;
+}
+
+.welcome-page .btn-welcome .btn {
+  width: 160px;
+  height: 30px;
+  color: #1B2632;
+  border: 2px solid #e96a23;
+  letter-spacing: 0.08em;
+}
+
+.welcome-page .btn-welcome .btn.left {
+  margin-right: 20px;
+}
+
+.welcome-page .btn-welcome .btn:hover {
+  color: white;
+}
+
+.welcome-page .bottom-line {
+  font-size: 11px;
+}
+
+.welcome-page form {
+  width: 300px;
+}
+
+.welcome-page i.fa {
+  font-size: 12px;
+  top: 1px;
+  position: relative;
+}
+
+.wallets-security a {
+  color: black;
+}
+
+.wallets-security a:hover, .wallets-security a.active {
+  color: #e96a23;
+  text-decoration: none;
+}
+
+.security-information a {
+  color: black;
+}
+
+.security-information a.active {
+  color: #e96a24;
+  text-decoration: none;
+}
+
+/******************************sub-wallets**********************************/
+
+.right-content.sub-wallet {
+  padding: 3px 15px;
+}
+
+.right-content.sub-wallet h4 {
+  margin: 0 0 30px 20px;
+  color: #a0a3a4;
+  font-weight: 500;
+}
+
+.sub-right {
+  width: calc(100% - 260px);
+  min-width: 125px;
+  text-align: -webkit-right;
+  display: inline-block;
+}
+
+.btn.min {
+  margin-top: 0;
+  padding: 5px 0;
+  width: 50px;
+  height: 24px;
+}
+
+.in-table {
+  display: flex;
+}
+
+.in-table .cub {
+  flex: 1;
+}
+
+.in-table .cub.buttons .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.in-table .cub .bottom {
+  border-top: 1px solid #a5c84c;
+  border-bottom: 1px solid #a5c84c;
+  padding: 17px 0;
+  min-height: 56px;
+}
+
+.in-table .cub.buttons .bottom {
+  padding: 15px 0;
+}
+
+.in-table .cub.buttons .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-table .cub .top {
+  margin-bottom: 5px;
+}
+
+.in-table .cub.buttons .bottom .mid {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.in-table .cub div {
+  text-align: -webkit-center;
+  font-size: 12px;
+}
+
+.btn.small {
+  margin-top: 0;
+  padding: 5px 0;
+  width: 95px;
+  height: 24px;
+}
+
+/******************************sub_wallets_new****************************/
+
+.new-wallets {
+  border: 2px solid #e96a23;
+  border-radius: 6px;
+  min-height: 160px;
+  position: absolute;
+  width: calc(100% - 67px);
+  bottom: 9px;
+  left: 33px;
+  padding: 10px 20px 20px 40px;
+}
+
+.new-wall-buttons .btn {
+  margin: 10px 0 0 10px;
+}
+
+.new-wallets label {
+  margin-left: 2px;
+  font-size: 11px;
+  font-family: 'DinAlternateBold';
+  letter-spacing: 0.07em;
+  color: #333;
+  line-height: 1;
+}
+
+.new-wallets .big-text {
+  font-size: 20px;
+  font-family: 'DinAlternateBold';
+  letter-spacing: 0.07em;
+  color: #333;
+}
+
+.new-wallets input {
+  margin-top: 0;
+}
+
+.new-wallets > div {
+  margin-top: 10px;
+}
+
+.sub-right .btn.press {
+  background: #e96a23;
+  color: white;
+}
+
+.sub-right .btn.press:hover {
+  background: rgba(233, 106, 35, 0.65);
+}
+
+/******************************media****************************************/
+
+@media (max-width: 1191px) {
+  .siphtor-wallet-logo img {
+    right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+    .drop_down .left_elem .many {
+    margin-right: 7px !important;
+  }
+  #right-page .drop_down .money-wallet {
+    margin-right: 0;
+  }
+  .account-balance {
+    padding: 10px;
+  }
+  #left-page .money-wallet {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 947px) {
+  .right-content.two-element {
+    min-height: 365px;
+  }
+  .right-content .qr-code {
+    margin: -5px 0 27px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #nav-body {
+    padding: 0 1%;
+  }
+  .bottom-line {
+    padding: 7px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .new-wallets {
+    bottom: 36px;
+  }
+
+  #left-page .bottom-line {
+    display: none;
+  }
+  .not-mobile {
+    display: none;
+  }
+  .table-wrapper .for-mobile {
+    display: block !important;
+    /* min-height: 398px; */
+  }
+  .page-navigation {
+    height: 100px;
+  }
+  .col-sm-6.right {
+    padding: 0 28px !important;
+  }
+  .bottom-line.right {
+    display: block !important;
+  }
+  .circle i {
+    bottom: 35px;
+  }
+  .col-sm-6.left {
+    border-right: none !important;
+  }
+}
+
+@media (max-width: 550px) {
+
+  #nav-body {
+    padding: 0 1%;
+  }
+  .right-content.buy .drop_down .many {
+    margin-right: 6px;
+  }
+  .welcome-page .btn-welcome .btn.left {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .welcome-page .btn-welcome {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #nav-body #nav-left {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  .page-navigation {
+    height: 70px;
+  }
+  .right-content {
+    padding: 0;
+  }
+  .page-navigation .icon-bar {
+    width: 100%;
+  }
+  .bottom-line a {
+    margin: 1px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 410px) {
+  .page-navigation .icon-bar > img {
+    height: 31px;
+  }
+  #nav-body #nav-left {
+    display: none;
+  }
+  #left-page .userinfo {
+    padding-left: 0;
+  }
+  #left-page .userinfo .user-fullname {
+    font-size: 20px;
+  }
+  .siphtor-wallet-logo img {
+    right: 0;
+    width: 150px;
+  }
+  .qrcode-siphtor-logo .qrbar {
+    padding-left: 0;
+  }
+  #left-page .money-wallet {
+    margin-right: 0;
+  }
+  #right-page .drop_down .money-wallet {
+    margin-right: 0;
+  }
+}

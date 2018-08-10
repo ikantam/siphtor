@@ -1,0 +1,16 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [ "env", { "targets": { "node": "8.11.1" }, "debug": "true" } ],
+        "stage-2",
+        "react"
+      ],
+      "plugins": [ "react-hot-loader/babel" ],
+      "sourceMaps": "inline",
+    },
+    "production": {
+      "presets": [ "env", "stage-2", "react" ]
+    }
+  }
+}

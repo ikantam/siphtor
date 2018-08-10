@@ -1,0 +1,124 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.11.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:deep-extend:20180409':
+    - latest-version > package-json > registry-url > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.727Z'
+    - npm > libnpx > update-notifier > latest-version > package-json > registry-auth-token > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.727Z'
+    - npm > libnpx > update-notifier > latest-version > package-json > registry-url > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.727Z'
+    - npm > update-notifier > latest-version > package-json > registry-auth-token > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+    - npm > update-notifier > latest-version > package-json > registry-url > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+    - libnpx > update-notifier > latest-version > package-json > registry-auth-token > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+    - libnpx > update-notifier > latest-version > package-json > registry-url > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+    - update-notifier > latest-version > package-json > registry-auth-token > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+    - update-notifier > latest-version > package-json > registry-url > rc > deep-extend:
+        reason: None given
+        expires: '2018-05-29T18:06:45.728Z'
+  'npm:hoek:20180212':
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > npm-lifecycle > node-gyp > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > request > hawk > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > npm-registry-client > request > hawk > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > npm-registry-client > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+      npm > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > npm-registry-client > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.729Z'
+    - npm > npm-registry-client > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.730Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.730Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.730Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.730Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.730Z'
+    - npm > request > hawk > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.731Z'
+    - npm > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.731Z'
+    - npm > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.731Z'
+    - npm > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2018-05-29T18:06:45.731Z'
+  'npm:https-proxy-agent:20180402':
+    - npm > npm-profile > make-fetch-happen > https-proxy-agent:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+  'npm:lodash:20180130':
+    - cli-table2 > lodash:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > cli-table2 > lodash:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+  'npm:sshpk:20180409':
+    - npm > libcipm > npm-lifecycle > node-gyp > request > http-signature > sshpk:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > npm-registry-client > request > http-signature > sshpk:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > npm-lifecycle > node-gyp > request > http-signature > sshpk:
+        reason: None given
+        expires: '2018-05-29T21:37:44.319Z'
+    - npm > request > http-signature > sshpk:
+        reason: None given
+        expires: '2018-05-29T21:37:44.320Z'
+patch: {}

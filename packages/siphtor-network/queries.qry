@@ -1,0 +1,31 @@
+/* Sample queries for Commodity Trading business network */
+
+query selectTransferTransactionsByUserRef {
+  description: "Select all transfers"
+  statement:
+      SELECT com.siphtor.network.Transfer
+          WHERE (sender == _$senderRef OR receiver == _$receiverRef)
+}
+
+query selectBuyTransactionsByUserRef {
+  description: "Select all transfers"
+  statement:
+      SELECT com.siphtor.network.Buy
+          WHERE (user == _$userRef)
+            ORDER BY [timestamp ASC]
+}
+
+query selectUserByFullName {
+  description: "Select all users based on their full name"
+  statement:
+      SELECT com.siphtor.network.User
+          WHERE (firstName == _$first AND lastName == _$second)
+}
+
+query selectWalletsByUserId {
+  description: "Select subwallets"
+  statement:
+      SELECT com.siphtor.network.Wallet
+          WHERE (owner == _$userRef)
+}
+

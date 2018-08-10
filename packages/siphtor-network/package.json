@@ -1,0 +1,40 @@
+{
+  "name": "siphtor-network",
+  "version": "0.0.1+1531666379",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha -t 0 test/*.js && cucumber-js",
+    "lint": "eslint .",
+    "build": "./scripts/build.sh",
+    "ping": "./scripts/ping.sh",
+    "upgrade": "./scripts/upgrade.sh",
+    "deploy": "npm run clean && ./scripts/deploy.sh",
+    "rest": "./scripts/rest.sh",
+    "clean": "rm -rf build/*"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "composer-admin": "~0.19.12",
+    "composer-cli": "~0.19.12",
+    "composer-client": "~0.19.12",
+    "composer-common": "~0.19.12",
+    "composer-connector-embedded": "~0.19.12",
+    "composer-cucumber-steps": "~0.19.12",
+    "composer-playground": "~0.19.12",
+    "composer-rest-server": "~0.19.12",
+    "cucumber": "^2.2.0",
+    "eslint": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest",
+    "nyc": "latest"
+  },
+  "author": "Vladimir Borozna",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "nanoid": "^1.0.7"
+  }
+}
